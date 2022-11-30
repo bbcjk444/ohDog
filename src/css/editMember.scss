@@ -1,0 +1,94 @@
+#root {
+  text-align: center;
+  .editWrapper {
+    margin: 0 auto;
+    .eTitle {
+      font-size: 40px;
+      font-family: 'Dongle', sans-serif;
+      p {
+        margin: 0px;
+        margin-top: 42px;
+        margin-bottom: 15px;
+      }
+    }
+    .editForm {
+      font-size: 25px;
+      form {
+        table {
+          height: 700px;
+          padding-top: 10px;
+          padding-bottom: 20px;
+          background-color: #fff;
+          border-radius: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 600px;
+          vertical-align: top;
+          box-shadow: 0px 1px 0px 0px #ccc;
+          td {
+            margin: 0 auto;
+            :last-child {
+              margin-bottom: 5px;
+            }
+
+            img {
+              width: 70px;
+              height: 70px;
+            }
+            label {
+              margin-left: 80px;
+              display: inline-block;
+              font-family: 'Dongle', sans-serif;
+            }
+            input {
+              margin-right: 40px;
+              padding: 2px 15px;
+              font-family: 'Dongle', sans-serif;
+              font-size: 20px;
+              width: 250px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+              background-color: white;
+              :last-child {
+                margin-bottom: 15px;
+              }
+            }
+            button {
+              margin-left: -175px;
+              position: relative;
+              padding: 5px 0px;
+              background-color: transparent;
+              // border-radius: 15px;
+              // box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+              text-decoration: none;
+              font-size: 18px;
+              transition: 0.25s;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+        .eSubmit {
+          margin-top: 10px;
+          width: 100px;
+          height: 40px;
+          font-family: 'Dongle', sans-serif;
+          font-size: 20px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          background-color: rgba(152, 152, 255, 0.179);
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(0, 0, 255);
+            opacity: 0.5;
+            color: white;
+            transition: 0.5s ease-out;
+          }
+          .popup {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

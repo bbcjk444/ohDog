@@ -1,0 +1,293 @@
+#root {
+  margin-top: 54px;
+  .animalTitle {
+    margin: 0 auto;
+    margin-top: 40px;
+
+    p {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      font-family: 'Dongle', sans-serif;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+  }
+  .blur {
+    z-index: 1;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+    filter: blur(8px);
+  }
+  .addForms {
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    input {
+      width: 220px;
+      height: 430px;
+      border: none;
+      // border: 1px solid rgb(180, 179, 179);
+      border-radius: 10px;
+      font-family: 'Dongle', sans-serif;
+      font-size: 35px;
+      &:hover {
+        background-color: rgb(156, 156, 248);
+        opacity: 0.7;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s ease-out;
+      }
+    }
+  }
+
+  .updateDataWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 60px;
+    // padding-right: 40px;
+    .updateData {
+      margin-left: 20px;
+      margin-bottom: 40px;
+
+      .animalName {
+        text-align: center;
+        height: 0px;
+        p {
+          font-size: 30px;
+          width: 200px;
+          margin-bottom: 0;
+          margin-top: 0;
+          margin-left: 15px;
+          line-height: -25px;
+          // margin-left: 90px;
+          // margin-top: 0;
+          // margin-bottom: 0px;
+          // margin: 0;
+        }
+      }
+      table {
+        margin-right: 20px;
+        width: 200px;
+        // border: 1px solid rgb(180, 179, 179);
+        border-radius: 10px;
+        font-family: 'Dongle', sans-serif;
+        font-size: 25px;
+        background-color: #fff;
+        tr {
+          td {
+            margin: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            .deleteBtn {
+              margin-bottom: 10px;
+              font-size: 20px;
+              font-family: 'Dongle', sans-serif;
+              padding: 0 15px;
+              width: 100px;
+              height: 30px;
+              border: 1px solid #ccc;
+              background-color: rgba(152, 152, 255, 0.179);
+              border-radius: 3px;
+              &:hover {
+                background-color: red;
+                opacity: 0.5;
+                color: white;
+                cursor: pointer;
+                transition: 0.5s ease-out;
+              }
+            }
+            img {
+              margin-top: 40px;
+              width: 200px;
+              height: 200px;
+              border-radius: 10px;
+              border: 1px solid #ccc;
+            }
+          }
+        }
+      }
+    }
+    .addForm {
+      margin-top: 0px;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      input {
+        width: 220px;
+        height: 430px;
+        border: none;
+        // border: 1px solid rgb(180, 179, 179);
+        border-radius: 10px;
+        font-family: 'Dongle', sans-serif;
+        font-size: 35px;
+        &:hover {
+          background-color: rgb(156, 156, 248);
+          opacity: 0.7;
+          color: white;
+          cursor: pointer;
+          transition: 0.5s ease-out;
+        }
+      }
+    }
+  }
+  .hoverForms {
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 2;
+    background-color: #fff;
+    position: fixed;
+    width: 400px;
+    left: 60%;
+    margin-left: -22%; /* half of width */
+    height: 600px;
+    top: 375px;
+    margin-top: -190px; /* half of height */
+    overflow: auto;
+    font-family: 'Dongle', sans-serif;
+    // box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 0px 0px #ccc;
+    .preview {
+      margin-left: 10px;
+      img {
+        border-radius: 5px;
+        width: 260px;
+        height: 250px;
+        object-fit: cover;
+      }
+    }
+    table {
+      // margin: 0 auto;
+      margin-left: 70px;
+      tr {
+        width: 100px;
+        td {
+          margin-bottom: 5px;
+          text-align: center;
+          label {
+            margin-right: 20px;
+            font-family: 'Dongle', sans-serif;
+            font-size: 20px;
+          }
+          input {
+            margin-right: 0;
+            margin-left: 10px;
+            font-size: 20px;
+            font-family: 'Dongle', sans-serif;
+            padding: 0 15px;
+            width: 150px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          }
+          .colorInput {
+            width: 182px;
+          }
+          .submitBtn {
+            margin-right: 20px;
+            margin-top: 20px;
+            background-color: rgba(152, 152, 255, 0.179);
+            &:hover {
+              background-color: rgb(0, 0, 255);
+              opacity: 0.5;
+              color: white;
+              cursor: pointer;
+              transition: 0.5s ease-out;
+            }
+          }
+          .cancelBtn {
+            margin-right: 20px;
+            background-color: rgba(152, 152, 255, 0.179);
+            &:hover {
+              background-color: orange;
+              opacity: 0.5;
+              color: white;
+              cursor: pointer;
+              transition: 0.5s ease-out;
+            }
+          }
+        }
+        .select {
+          padding: 15px 10px;
+          margin-left: 10px;
+        }
+        .select input[type='radio'] {
+          display: none;
+        }
+        .select input[type='radio'] + label {
+          margin-right: 0;
+          display: inline-block;
+          cursor: pointer;
+          height: 28px;
+          width: 87px;
+          border: 1px solid #ccc;
+          line-height: 30px;
+          text-align: center;
+          font-size: 18px;
+          border-radius: 3px;
+        }
+        .select input[type='radio'] + label {
+          background-color: #fff;
+          color: #333;
+        }
+        .select input[type='radio']:checked + label {
+          background-color: rgb(0, 0, 255);
+          opacity: 0.5;
+          color: white;
+        }
+        .selectSpecies {
+          margin-left: 10px;
+          margin-bottom: 12px;
+          font-size: 20px;
+          font-family: 'Dongle', sans-serif;
+          padding: 0 15px;
+          width: 182px;
+          height: 33px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          cursor: pointer;
+        }
+        .nameLabel {
+          text-align: right;
+        }
+      }
+      .fileBox {
+        label {
+          margin-right: 40px;
+          margin-bottom: 10px;
+          text-align: center;
+          display: inline-block;
+          padding: 0.5em 0.75em;
+          font-size: 20px;
+          line-height: 15px;
+          vertical-align: middle;
+          background-color: rgba(152, 152, 255, 0.179);
+          cursor: pointer;
+          border: 1px solid #ebebeb;
+          border-bottom-color: #e2e2e2;
+          border-radius: 0.25em;
+          width: 50px;
+          height: 10px;
+          &:hover {
+            background-color: rgb(0, 0, 255);
+            opacity: 0.5;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s ease-out;
+          }
+        }
+        input[type='file'] {
+          /* 파일 필드 숨기기 */
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+      }
+    }
+  }
+}

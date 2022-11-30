@@ -1,0 +1,245 @@
+#root {
+  padding-top: 54px;
+}
+
+.feedlink {
+  color: black;
+}
+.blur {
+  z-index: 1;
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
+  filter: blur(8px);
+}
+.imgChangeBtn {
+  margin-right: 0;
+  //   margin-bottom: 30px;
+  //   margin-left: 10px;
+  font-size: 25px;
+  font-family: 'Dongle', sans-serif;
+  padding: 0 15px;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: rgba(152, 152, 255, 0.179);
+  margin-top: 10px;
+  &:hover {
+    background-color: rgb(0, 0, 255);
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+}
+.imageHoverForm {
+  top: 24%;
+  position: fixed;
+  left: 38%;
+  z-index: 2;
+  .imgtable {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 0px #ccc;
+    tr {
+      td {
+        .img-preview {
+          margin-left: 10px;
+          img {
+            border-radius: 15px;
+            width: 260px;
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+      }
+      .fileBox {
+        padding-left: 30px;
+        label {
+          // margin-right: 40px;
+          margin-bottom: 10px;
+          text-align: center;
+          display: inline-block;
+          padding: 0.5em 0.75em;
+          font-size: 20px;
+          line-height: 15px;
+          vertical-align: middle;
+          background-color: rgba(152, 152, 255, 0.179);
+          cursor: pointer;
+          border: 1px solid #ebebeb;
+          border-bottom-color: #e2e2e2;
+          border-radius: 0.25em;
+          width: 120px;
+          height: 10px;
+          &:hover {
+            background-color: rgb(0, 0, 255);
+            opacity: 0.5;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s ease-out;
+          }
+        }
+        input[type='file'] {
+          /* 파일 필드 숨기기 */
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0;
+        }
+
+        fileBox_box1 {
+          //   width: 140px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        fileBox_box2 {
+          text-align: center;
+        }
+        fileBox_box3 {
+          text-align: center;
+          margin-left: -140px;
+        }
+      }
+    }
+
+    .imgUpload {
+      margin-left: 35px;
+      margin-top: 10px;
+      &:hover {
+        background-color: rgb(0, 0, 255);
+        opacity: 0.5;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s ease-out;
+      }
+    }
+    .send_but {
+      margin-right: 0;
+      display: block;
+      font-size: 20px;
+      font-family: 'Dongle', sans-serif;
+      padding: 0 15px;
+      width: 150px;
+      height: 30px;
+      border: none;
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+      margin-top: 20px;
+      background-color: rgba(152, 152, 255, 0.179);
+      margin-top: 10px;
+      &:hover {
+        background-color: rgb(0, 0, 255);
+        opacity: 0.5;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s ease-out;
+      }
+    }
+
+    .cancel_but {
+      margin-right: 0;
+      //   margin-left: 10px;
+      font-size: 20px;
+      font-family: 'Dongle', sans-serif;
+      padding: 0 15px;
+      width: 150px;
+      height: 30px;
+      border: none;
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+      //   margin-top: 10px;
+      background-color: rgba(152, 152, 255, 0.179);
+      margin-top: 10px;
+      &:hover {
+        background-color: orange;
+        opacity: 0.5;
+        color: white;
+        cursor: pointer;
+        transition: 0.5s ease-out;
+      }
+    }
+  }
+}
+.photolink {
+  color: rgb(41, 48, 233);
+}
+
+// image +
+.container {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  // gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  // border: 5px solid black;
+  text-align: center;
+  //   margin: auto;
+}
+
+// 업로드버튼????
+
+// 박스 선 숨기기
+td,
+th {
+  border: none;
+}
+
+// ==================================배경=============================================
+
+// .ImgBackGround {
+//     position: fixed;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(0,0,0,0.5);
+// }
+
+// .ImgBackGround2 {
+//     background-color: white;
+//     width: 80%;
+//     height: 100%;
+// }
+
+// ==================================배경=============================================
+
+// =================================(image.js)테이블 삽입창========================================
+
+// =================================(image.js)테이블 삽입창========================================
+
+// ================================전송버튼==================================
+// .send_but {
+//     margin-left: 35px;
+//     margin-top: 10px;
+//     &:hover {
+//         background-color: rgb(0, 0, 255);
+//         opacity: 0.5;
+//         color: white;
+//         cursor: pointer;
+//         transition: 0.5s ease-out;
+//     }
+// }
+// ================================취소버튼=======================================
+// .cancel_but {
+//     margin-left: 35px;
+//     &:hover {
+//         background-color: red;
+//         opacity: 0.5;
+//         color: white;
+//         cursor: pointer;
+//         transition: 0.5s ease-out;
+//     }
+// }

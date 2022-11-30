@@ -1,0 +1,26 @@
+#root {
+  .boardTr {
+    td {
+      height: 20px;
+      p {
+        margin: 0;
+        height: 40px;
+        padding: 0;
+        font-size: 23px;
+      }
+      a {
+        font-size: 23px;
+      }
+    }
+    .boardLike {
+      input {
+        background: none;
+        border: none;
+        font-size: 25px;
+        font-family: 'Dongle';
+        color: rgb(255, 90, 90);
+        cursor: pointer;
+      }
+    }
+  }
+}

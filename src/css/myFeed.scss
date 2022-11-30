@@ -1,0 +1,52 @@
+#root {
+  padding-top: 54px;
+  font-family: 'Dongle', sans-serif;
+}
+li {
+  margin: 0 auto;
+  float: left;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  // padding-right: 10px;
+  color: black;
+}
+
+// p {
+// margin-top: 0;
+// margin-bottom: 15px;
+// font-family: 'Dongle', sans-serif;
+// font-size: 40px;
+// }
+
+#menu {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+}
+.changeTitle {
+  margin: 0;
+  margin-top: 17px;
+  font-family: 'Dongle', sans-serif;
+  font-size: 40px;
+}
+#menu ul {
+  padding: 0px;
+}
+#menu li a {
+  // margin: 0 auto;
+  margin-right: 92px;
+}
+
+#menu li a:hover {
+  color: rgb(41, 48, 233);
+}
+
+.myfeedlink {
+  color: rgb(41, 48, 233);
+}
+.myphotolink {
+  color: black;
+}
